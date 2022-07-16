@@ -1,0 +1,6 @@
+<ul class="book-list">
+  <li *ngFor="let b of books">
+    <bm-book-list-item [book]="b" <!--BS-->[routerLink]="b.isbn"<!--BE-->></bm-book-list-item>
+  </li>
+  <!-- ... -->
+</ul>

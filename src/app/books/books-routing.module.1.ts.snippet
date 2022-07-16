@@ -1,0 +1,17 @@
+// ...
+/*BS*/import { BookDetailsComponent } from './book-details/book-details.component';
+import { BookListComponent } from './book-list/book-list.component';/*BE*/
+
+const routes: Routes = [
+  /*BS*/{
+    path: 'books',
+    component: BookListComponent,
+  },
+  {
+    path: 'books/:isbn',
+    component: BookDetailsComponent,
+  }/*BE*/
+];
+
+@NgModule({/* ... */})
+export class BooksRoutingModule { }
