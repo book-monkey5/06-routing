@@ -1,5 +1,11 @@
 <nav>
-  <a routerLink="/home" <!--BS-->routerLinkActive="active"<!--BE-->>Home</a>
-  <a routerLink="/books" <!--BS-->routerLinkActive="active"<!--BE-->>Books</a>
+  <a routerLink="/home"
+    <!--BS-->routerLinkActive="active"
+    ariaCurrentWhenActive="page"<!--BE-->>Home</a>
+  <a routerLink="/books"
+    <!--BS-->routerLinkActive="active"
+    ariaCurrentWhenActive="page"<!--BE-->>Books</a>
 </nav>
-<router-outlet></router-outlet>
+<main>
+  <router-outlet></router-outlet>
+</main>
