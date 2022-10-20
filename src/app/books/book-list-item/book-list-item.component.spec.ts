@@ -23,9 +23,7 @@ describe('BookListItemComponent', () => {
       ]
     })
     .compileComponents();
-  });
 
-  beforeEach(() => {
     location = TestBed.inject(Location);
     fixture = TestBed.createComponent(BookListItemComponent);
     component = fixture.componentInstance;
