@@ -1,12 +1,8 @@
-import { Component } from '@angular/core';
 import { Location } from '@angular/common';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 
 import { BookListItemComponent } from './book-list-item.component';
-
-@Component({ })
-class TestDetailsComponent { }
 
 describe('BookListItemComponent', () => {
   let component: BookListItemComponent;
@@ -18,7 +14,7 @@ describe('BookListItemComponent', () => {
       declarations: [BookListItemComponent],
       imports: [
         RouterTestingModule.withRoutes([
-          { path: ':isbn', component: TestDetailsComponent }
+          { path: ':isbn', children: [] }
         ])
       ]
     })
