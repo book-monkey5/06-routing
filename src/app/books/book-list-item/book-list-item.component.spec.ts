@@ -28,7 +28,7 @@ describe('BookListItemComponent', () => {
       isbn: '111',
       title: 'Book 1',
       authors: [],
-      thumbnailUrl: 'https://ng-buch.de/kochen.jpg'
+      thumbnailUrl: 'https://cdn.ng-buch.de/kochen.png'
     };
     fixture.detectChanges();
   });
